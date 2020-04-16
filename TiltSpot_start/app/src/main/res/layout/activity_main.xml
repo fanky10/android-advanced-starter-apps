@@ -20,6 +20,55 @@ limitations under the License. -->
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.tiltspot.MainActivity">
+    <ImageView
+        android:id="@+id/spot_top"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginBottom="@dimen/base_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription"
+        android:alpha="0.05"/>
+
+    <ImageView
+        android:id="@+id/spot_bottom"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginBottom="@dimen/base_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription"
+        android:alpha="0.05"/>
+
+    <ImageView
+        android:id="@+id/spot_right"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginEnd="@dimen/base_margin"
+        android:layout_marginRight="@dimen/base_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription"
+        android:alpha="0.05"/>
+
+    <ImageView
+        android:id="@+id/spot_left"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:layout_marginStart="@dimen/base_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription"
+        android:alpha="0.05"/>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/label_group"
